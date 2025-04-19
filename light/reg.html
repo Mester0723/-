@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Регистрация</h1>
+    <form action="/login" method="POST">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" name="username">
+      <label for="date">Дата рождения:</label>
+      <input type="date" id="date" name="date">
+      <label for="email">Электронная почта:</label>
+      <input type="email" id="email" name="email">
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password">
+      <label for="confirm_password">Подтверждение пароля:</label>
+      <input type="password" id="confirm_password" name="confirm_password">
+      <input type="submit" value="Зарегистрироваться">
+      <button href="/light/login.html">Уже есть аккаунт?</button>
+    </form>
+  </body>
+  <style>
+      body {
+        font-family: 'Segoe UI Black', sans-serif;
+        background-color: #f3f3f3;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      label, input {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #555;
+      }
+      button {
+        background-color: #f3f3f3;
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #333;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-family:'Segoe UI Black', sans-serif;
+      }
+    </style>
